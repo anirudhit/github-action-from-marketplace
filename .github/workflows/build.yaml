@@ -1,0 +1,11 @@
+name: Python build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code checkout
+        uses: action/checkout@v3
+      - name: Python Syntax Checker
+        uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+    
